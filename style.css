@@ -1,0 +1,523 @@
+body {
+  background-color: #303538 !important;
+  color: #777474 !important;
+}
+
+@font-face {
+  font-family: StudioScriptCTT; /* Имя шрифта */
+  src: url(fonts/studioscriptctt.ttf); /* Путь к файлу со шрифтом */
+}
+
+::selection {
+  background: rgba(0, 0, 0, 0.8);
+  color: #fff;
+}
+
+@import url("https://fonts.googleapis.com/css?family=Lora");
+@import url("https://fonts.googleapis.com/css?family=Playfair+Display");
+@import url("https://fonts.googleapis.com/css?family=Ubuntu+Condensed");
+@import url("https://fonts.googleapis.com/css?family=Slabo+27px");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
+@import url("https://fonts.googleapis.com/css?family=Cormorant+Garamond");
+
+@font-face {
+  font-family: pharmadin;
+  src: url(fonts/Attentica_4F_UltraLight.ttf);
+}
+
+@font-face {
+  font-family: "OpenSansRegular";
+  src: url("../fonts/OpenSansRegular/OpenSansRegular.eot");
+  src: url("../fonts/OpenSansRegular/OpenSansRegular.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/OpenSansRegular/OpenSansRegular.woff") format("woff"),
+    url("../fonts/OpenSansRegular/OpenSansRegular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "LoraRegular";
+  src: url("../fonts/LoraRegular/LoraRegular.eot");
+  src: url("../fonts/LoraRegular/LoraRegular.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/LoraRegular/LoraRegular.woff") format("woff"),
+    url("../fonts/LoraRegular/LoraRegular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "UbuntuCondensedRegular";
+  src: url("../fonts/UbuntuCondensedRegular/UbuntuCondensedRegular.eot");
+  src: url("../fonts/UbuntuCondensedRegular/UbuntuCondensedRegular.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/UbuntuCondensedRegular/UbuntuCondensedRegular.woff")
+      format("woff"),
+    url("../fonts/UbuntuCondensedRegular/UbuntuCondensedRegular.ttf")
+      format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+.toolti {
+  max-width: 330px;
+  transition: 1s;
+  position: fixed;
+  padding: 10px 20px;
+  /* красивости... */
+
+  border: 1px solid #b3c9ce;
+  border-radius: 4px;
+  text-align: center;
+  font-family: "Ubuntu Condensed", sans-serif;
+  font: "Ubuntu Condensed" 14px/1.3 sans-serif;
+  color: #333;
+  background: #fff;
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3);
+}
+
+#page-preloader {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background: #000;
+  z-index: 100500;
+}
+
+#page-preloader .spinner {
+  width: 400px;
+  height: 400px;
+  position: absolute;
+  left: 40%;
+  top: 31%;
+  background: url("images/preloadzbs.gif") no-repeat 50% 50%;
+  margin: -16px 0 0 -16px;
+}
+
+/*
+font-family: 'Open Sans', sans-serif;
+font-family: 'Slabo 27px', serif;
+font-family: 'Ubuntu Condensed', sans-serif;
+font-family: 'Lora', sans-serif;
+font-family: 'Playfair Display', sans-serif;
+*/
+
+/* #page-preloader {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background: #fff;
+    z-index: 100500;
+}
+
+#page-preloader .spinner {
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    left: 40%;
+    top: 31%;
+    background: url('images/preloadzbs.gif') no-repeat 50% 50%;
+    margin: -16px 0 0 -16px;
+}  */
+.logo {
+  position: absolute;
+  top: 3px;
+  left: 500px;
+}
+
+.header {
+  background-image: url(images/derevo.jpg);
+  background-color: rgba(48, 53, 56, 1);
+  height: 122px;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+  font-size: 22px;
+  color: #fff;
+  font-family: pharmadin;
+  margin: 0 auto;
+}
+
+.headerscroll {
+  background-image: url(images/derevo08-min.png);
+  transition: all 0.5s;
+  background-color: rgba(48, 53, 56, 0.4);
+  color: #fff;
+  height: 120px;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+  font-size: 22px;
+  font-family: pharmadin;
+  margin: 0 auto;
+}
+
+.hed {
+  position: relative;
+  min-width: 1170px;
+  margin: 0 auto;
+}
+
+.button {
+  display: inline;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #303538;
+  padding: 6px 26px;
+  font-size: 34px;
+  color: #fff;
+}
+
+.button:hover {
+  transition: all 0.5s;
+  background-color: red !important;
+  padding-top: 10px;
+}
+
+.button a:acrive {
+  text-decoration: none;
+  color: inherit;
+}
+
+.button a:link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.button a:visited {
+  text-decoration: none;
+  color: inherit;
+}
+.ff {
+  margin-left: 70px;
+}
+.fa {
+  color: #fff;
+  margin-top: px;
+  margin-left: 10px;
+  margin-right: 12px;
+}
+.fa a {
+  text-decoration: none;
+  color: inherit;
+}
+.fa-facebook:hover {
+  transition: 0.5s all;
+  color: #0067b5;
+}
+.fa-instagram:hover {
+  transition: 0.5s all;
+  color: #9a0101;
+}
+.fa-vk:hover {
+  transition: 0.5s all;
+  color: #046bbf;
+}
+.social {
+  display: inline;
+  position: absolute;
+  top: 16px;
+  left: 300px;
+  font-size: 16px;
+}
+.adres {
+  display: inline;
+  font-size: 30px;
+  top: 25px;
+  height: 100px;
+  position: absolute;
+  right: 0;
+  font-family: pharmadin;
+  text-align: right;
+}
+.adres p {
+  line-height: 16px;
+}
+.adres-2 {
+  position: absolute;
+  width: 260px;
+  font-size: 30px;
+  right: 0;
+  top: 78px;
+  font-family: pharmadin;
+}
+
+#menu {
+  width: 500px;
+  position: absolute;
+  top: 70px;
+  left: 0;
+}
+
+#menu ul {
+  padding: 0;
+}
+
+#menu li {
+  display: inline;
+  font-family: "pharmadin", serif;
+  font-size: 44px;
+}
+
+#menu a:acrive {
+  text-decoration: none;
+  color: inherit;
+}
+
+#menu a:link {
+  text-decoration: none;
+  color: inherit;
+}
+
+#menu a:visited {
+  text-decoration: none;
+  color: inherit;
+}
+
+.content {
+  margin: 0 auto;
+  margin-top: 130px;
+  width: 70%;
+  width: 1170px;
+}
+
+#owl-demo .item img {
+  display: block;
+  width: 100%;
+  height: auto;
+  height: 450px;
+}
+.slide {
+  background-color: #fddd23;
+}
+
+.uslugi p {
+  font-size: 80px;
+  text-align: center;
+  font-family: pharmadin;
+  color: #866740;
+  text-transform: uppercase;
+}
+.ceni p {
+  font-size: 22px;
+  font-family: sans-serif;
+  color: #000;
+  text-transform: uppercase;
+}
+.col {
+  margin-top: 50px;
+  width: 360px;
+  display: inline;
+  float: right;
+  padding-right: 30px;
+}
+
+.colh {
+  border-bottom: solid 1px #866740;
+  width: 390px;
+  display: inline;
+  float: right;
+  padding-right: 30px;
+}
+
+.colh h3 {
+  font-size: 60px;
+  font-family: pharmadin;
+  text-align: center;
+}
+.col h3 {
+  margin-left: ;
+  font-size: 60px;
+  font-family: pharmadin;
+  text-align: center;
+}
+.col h4 {
+  margin-top: 30px;
+  font-size: 21px;
+  margin-left: 30px;
+  margin-bottom: 0px;
+  font-family: "Ubuntu Condensed", sans-serif;
+}
+.price {
+  font-size: 55px;
+  margin-left: 30px;
+  font-family: "OpenSansRegular";
+}
+
+.colf {
+  margin-top: 50px;
+  width: 390px;
+  display: inline;
+  float: right;
+  padding-right: 30px;
+}
+.colf h3 {
+  margin-left: ;
+  font-size: 60px;
+  font-family: pharmadin;
+  text-align: center;
+}
+.colf h4 {
+  margin-top: 30px;
+  font-size: 21px;
+  margin-left: 30px;
+  margin-bottom: 0px;
+}
+
+.div {
+  width: 1170px;
+  height: 1350px;
+  position: relative;
+}
+
+.blog {
+  height: 760px;
+  width: 1170px;
+  /* background-color: #; */
+  position: relative;
+  background-image: url(images/unnamed.jpg);
+  margin-bottom: 50px;
+  border-radius: 4px;
+}
+.map {
+  margin: 0 auto;
+  width: 100%;
+}
+
+.footer {
+  margin-top: 20px;
+}
+
+.footer li {
+  display: inline;
+  font-family: "pharmadin", serif;
+  font-size: 34px;
+}
+.footer a:acrive {
+  text-decoration: none;
+  color: inherit;
+}
+
+.footer a:link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.footer a:visited {
+  text-decoration: none;
+  color: inherit;
+}
+
+.inst {
+  float: left;
+  width: 280px;
+  height: 280px;
+  background-color: #777474;
+  margin-left: 10px;
+  margin-top: 12px;
+  margin-bottom: 30px;
+  color: #866740;
+  border: 4px;
+}
+
+.img {
+  margin: 10px;
+  width: 260px;
+  height: 260px;
+}
+.inst img {
+  margin: 10px;
+  overflow: hidden;
+}
+
+.img1 {
+  background-image: url(images/1pic.jpg);
+  overflow: hidden;
+  width: 260px;
+  height: 260px;
+  margin: 10px;
+  background-position: center;
+}
+.img2 {
+  background-image: url(images/2pic.jpg);
+  overflow: hidden;
+  width: 260px;
+  height: 260px;
+  margin: 10px;
+  background-position: center;
+}
+.img3 {
+  background-image: url(images/3pic.jpg);
+  overflow: hidden;
+  width: 260px;
+  height: 260px;
+  margin: 10px;
+  background-position: center;
+}
+.img4 {
+  background-image: url(images/4pic.jpg);
+  overflow: hidden;
+  width: 260px;
+  height: 260px;
+  margin: 10px;
+  background-position: center;
+}
+.img5 {
+  background-image: url(images/5pic.jpg);
+  overflow: hidden;
+  width: 260px;
+  height: 260px;
+  margin: 10px;
+  background-position: center;
+}
+.img6 {
+  background-image: url(images/6pic.jpg);
+  overflow: hidden;
+  width: 260px;
+  height: 260px;
+  margin: 10px;
+  background-position: center;
+}
+.img7 {
+  background-image: url(images/7pic.jpg);
+  overflow: hidden;
+  width: 260px;
+  height: 260px;
+  margin: 10px;
+  background-position: center;
+}
+.img8 {
+  background-image: url(images/8pic.jpg);
+  overflow: hidden;
+  width: 260px;
+  height: 260px;
+  margin: 10px;
+  background-position: center;
+}
+.inst p {
+  margin: 0 auto;
+  width: 260px;
+  background-color: #;
+  max-height: 60px;
+  color: white;
+}
+
+.log {
+  margin: 0 auto;
+  border-bottom: solid 2px #866740;
+  background-color: #303538;
+}
+
+.log p {
+  font-size: 80px;
+  text-align: center;
+  font-family: pharmadin;
+  color: #866740;
+  text-transform: uppercase;
+}

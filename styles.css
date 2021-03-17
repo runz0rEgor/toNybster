@@ -1,0 +1,52 @@
+html, body {
+	margin: 0;
+	height: 100%;
+	width: 100%;
+}
+
+.container {
+	width: 100%;
+	min-height: 100%;
+	display: table;
+	background-color: #000000;
+	color: white;
+}
+
+.content {
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+	font-family: 'Roboto', sans-serif;
+}
+
+.buttons {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.button {
+	display: block;
+	padding: 10px 20px;
+	border-radius: 10px;
+	margin: 0 auto;
+	margin-top: 50px;
+	background-color: red;
+	color: white;
+	border: none;
+	font-size: 22px
+}
+
+.button a {
+	color: white;
+	text-decoration: none;
+}
+
+.button a:visited {
+	color: white;
+	text-decoration: none;
+}
+
+.button:hover {
+	text-decoration: underline;
+}

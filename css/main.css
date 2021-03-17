@@ -1,0 +1,517 @@
+body {
+  background-color: white;
+  min-width: 1160px;
+  background-color: #f2f1f0;
+  font-family: "Amatic SC";
+}
+
+@font-face {
+  font-family: "AmaticSC";
+  src: url("fonts/AmaticSC-Bold.ttf");
+}
+
+.modal-backdrop {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(53, 53, 53, 0.6);
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.modal-body {
+  border: solid 5px #333333;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  background-color: white;
+  color: #333333;
+  font-size: 30px;
+  width: 400px;
+  -webkit-box-flex: inherit;
+  -webkit-flex: inherit;
+  -ms-flex: inherit;
+  flex: inherit;
+  padding: 30px;
+}
+.modal-body a {
+  color: #333333;
+}
+
+.header {
+  background-color: #866740;
+  color: white;
+  font-size: 20px;
+}
+
+.logo-mobail {
+  display: none;
+}
+
+.title-mobail {
+  display: none;
+}
+
+.header-container {
+  padding: 8px 15px;
+  margin: 0 auto;
+  width: 1160px;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.choose-filial:hover {
+  cursor: pointer;
+}
+
+.container-main {
+  position: relative;
+}
+
+.main {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  place-items: center;
+  height: 600px;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  text-align: center;
+  overflow: hidden;
+}
+.main .image {
+  margin-left: 450px;
+}
+.main .logo {
+  font-family: "Amatic SC", cursive;
+}
+.main .logo h3 {
+  font-size: 42px;
+  font-weight: bold;
+  margin-top: 20px;
+}
+.main .logo p {
+  font-size: 30px;
+}
+
+.container-info {
+  padding: 80px 10px 0 10px;
+  color: white;
+  background-color: #303030;
+  overflow: hidden;
+}
+.container-info .info {
+  width: 1140px;
+  margin: 0 auto;
+  text-align: center;
+  letter-spacing: 2px;
+  font-size: 20px;
+  margin-bottom: 80px;
+}
+.container-info .info .text {
+  padding: 0 60px;
+}
+.container-info .info h3 {
+  font-size: 42px;
+  font-weight: bold;
+}
+.container-info .info p {
+  margin: 20px 0;
+}
+.container-info .masters {
+  margin-top: 50px;
+  height: 340px;
+  position: relative;
+}
+.container-info .masters .shadow-pos-1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.container-info .masters .shadow-pos-1 .face {
+  position: absolute;
+  top: 10px;
+  left: 70px;
+  height: 110px;
+  width: 110px;
+}
+.container-info .masters .shadow-pos-2 {
+  position: absolute;
+  top: 0;
+  left: 140px;
+}
+.container-info .masters .shadow-pos-2 .face {
+  position: absolute;
+  top: 10px;
+  left: 70px;
+  height: 110px;
+  width: 110px;
+}
+.container-info .masters .shadow-pos-3 {
+  position: absolute;
+  top: 0;
+  left: 250px;
+  z-index: 10;
+}
+.container-info .masters .shadow-pos-3 .face {
+  position: absolute;
+  top: 10px;
+  left: 105px;
+  height: 110px;
+  width: 110px;
+}
+.container-info .masters .shadow-pos-4 {
+  position: absolute;
+  top: 0;
+  left: 420px;
+}
+.container-info .masters .shadow-pos-4 .face {
+  position: absolute;
+  top: 5px;
+  left: 75px;
+  height: 110px;
+  width: 110px;
+}
+.container-info .masters .shadow-pos-5 {
+  position: absolute;
+  top: 0;
+  left: 550px;
+  z-index: 10;
+}
+.container-info .masters .shadow-pos-5 .face {
+  position: absolute;
+  top: 15px;
+  left: 150px;
+  height: 120px;
+  width: 120px;
+}
+.container-info .masters .shadow-pos-6 {
+  position: absolute;
+  top: 0;
+  left: 784px;
+  z-index: 9;
+}
+.container-info .masters .shadow-pos-6 .face {
+  position: absolute;
+  top: 10px;
+  left: 65px;
+  height: 110px;
+  width: 110px;
+}
+.container-info .masters .shadow-pos-7 {
+  position: absolute;
+  top: 0;
+  left: 900px;
+}
+.container-info .masters .shadow-pos-7 .face {
+  position: absolute;
+  top: 5px;
+  left: 75px;
+  height: 110px;
+  width: 110px;
+}
+.container-info .masters .master {
+  position: relative;
+}
+.container-info .masters .master .barber-popup {
+  position: absolute;
+  top: -20px;
+  left: -30px;
+  z-index: 20;
+}
+.container-info .masters .master .barber-popup .barber-popup-photo {
+  width: 164px;
+  height: 164px;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+}
+.container-info .masters .master .barber-popup .barber-popup-data {
+  display: block;
+  padding: 5px;
+  margin: 2px 0;
+  background-color: #303030;
+  z-index: 20;
+}
+
+.container-prices {
+  background-color: white;
+  padding: 80px 10px 0 10px;
+}
+.container-prices .prices {
+  width: 1140px;
+  margin: 0 auto;
+  text-align: center;
+}
+.container-prices .prices h3 {
+  font-weight: bold;
+  font-size: 45px;
+}
+.container-prices .prices-block {
+  overflow: hidden;
+  height: 500px;
+}
+.container-prices .prices-head {
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+.container-prices .prices-head:hover {
+  cursor: pointer;
+}
+.container-prices .open {
+  color: #8e714d;
+  border-bottom: 3px solid #8e714d !important;
+}
+.container-prices .price-tab-header {
+  padding: 10px 100px;
+  font-size: 44px;
+  text-align: center;
+  border-bottom: 3px solid black;
+  cursor: pointer;
+}
+.container-prices .prices-tabs {
+  width: 3420px;
+  position: relative;
+  margin-top: 50px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+.container-prices .price-tab {
+  width: 1140px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-bottom: 50px;
+}
+.container-prices .price-tab .price-item {
+  position: relative;
+  min-width: 360px;
+  max-height: 91px;
+  margin: 10px;
+  padding: 15px;
+  background-color: #303030;
+  color: white;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  font-family: "Fira Sans", sans-serif;
+}
+
+.price-item-info {
+  position: absolute;
+  right: 15px;
+  top: 33px;
+  border: 1px solid white;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  padding: 2px 10px;
+}
+.price-item-info:hover {
+  cursor: pointer;
+  color: #866740;
+  border-color: #866740;
+}
+
+.additional-info {
+  margin: 20px 0;
+  max-width: 330px;
+}
+
+.price-item-name {
+  font-size: 20px;
+}
+
+.price-item-separator {
+  margin: 3px 70px;
+  background-color: white;
+}
+
+.open-price-info {
+  position: absolute;
+  color: white;
+  padding: 15px;
+  min-width: 360px;
+  background-color: #303030;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  font-family: "Fira Sans", sans-serif;
+  text-align: center;
+  -webkit-box-shadow: 0px 0px 8px 2px white;
+  box-shadow: 0px 0px 8px 2px white;
+}
+
+.price-booking {
+  margin: 0 auto;
+  background-color: #866740;
+  padding: 15px 80px;
+  color: white;
+  font-family: "Fira Sans", sans-serif;
+  border: none;
+}
+.price-booking:hover {
+  color: black;
+  background-color: white;
+  text-decoration: none;
+  border: 2px solid #866740;
+}
+
+.gallery-main {
+  height: 500px;
+  margin-top: 50px;
+  overflow: hidden;
+}
+.gallery-main h3 {
+  text-align: center;
+  margin-bottom: 50px;
+  font-size: 70px;
+}
+.gallery-main .gallery {
+  margin-left: 200px;
+}
+
+@media (max-width: 1024px) {
+  .header {
+    padding: 40px 0;
+    background-color: inherit;
+    color: #212529;
+    font-size: 25px;
+  }
+
+  .header-container {
+    font-size: 33px;
+  }
+
+  .logo-mobail {
+    display: block;
+    width: 150px;
+    height: 100px;
+  }
+
+  .logo-mobail__img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .container-main {
+    height: 50vh;
+    background-image: url("../img/main-photo-mini.png");
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .main {
+    display: block;
+    font-size: 80px;
+  }
+
+  .logo {
+    display: none;
+  }
+
+  .title-mobail {
+    display: block;
+  }
+
+  .container-info {
+    padding: 45px 10px 0 10px;
+  }
+
+  .container-info .info h3 {
+    font-size: 55px;
+  }
+
+  .container-info .info p {
+    font-size: 30px;
+  }
+
+  .container-prices .prices h3 {
+    font-size: 55px;
+  }
+}
+@media (max-width: 415px) {
+  .header {
+    padding: 30px 0;
+  }
+
+  .container-main {
+    height: 150vh;
+    background-size: cover;
+  }
+
+  .header-container {
+    flex-direction: column;
+    align-items: center;
+    font-size: 75px;
+  }
+
+  .logo-mobail {
+    display: block;
+    width: 285px;
+    height: 190px;
+    margin-bottom: 43px;
+  }
+
+  .title-mobail {
+    color: rgb(0, 0, 0);
+    font-size: 100px;
+  }
+
+  .container-info .info h3 {
+    font-size: 100px;
+  }
+
+  .container-info .info p {
+    font-size: 80px;
+  }
+}
